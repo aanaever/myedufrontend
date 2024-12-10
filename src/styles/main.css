@@ -1,0 +1,123 @@
+@import "base.css";
+
+.btn {
+ 
+  font-family: "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  width: 100%;
+  padding: 10px 15px; /* Добавьте паддинг */
+  border-radius: 12px; /* Добавьте скругленные углы */
+  cursor: pointer; /* Указатель при наведении */
+  transition: background-color 0.3s, color 0.3s; /* Плавные изменения */
+  
+}
+
+
+.main-view {
+  padding: 0 10%;
+}
+
+.server-error {
+  color: red;
+}
+
+a {
+  text-decoration: none;
+}
+
+.product-img {
+  aspect-ratio: 16/9;
+  height: 10em;
+  transition: ease-in-out 0.6s;
+}
+.product-img:hover {
+  transform: scale(1.2);
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 700;
+}
+.card-author {
+  color: #636362;
+  font-size: 14px;
+}
+
+.nodata {
+  display: flex;
+  margin: 3em auto;
+  flex-direction: row;
+  justify-content: center;
+  color: grey;
+}
+
+.cart-header {
+  font-family: "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  background-color: black;
+  color: white;
+  margin-top: 0;
+  height: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 0;
+  padding: 2% 10%;
+}
+
+.noblue {
+  color: black !important;
+}
+
+.mobile-only {
+  display: none;
+}
+
+@media only screen and (max-width: 700px) {
+  .product-img {
+    aspect-ratio: 16/9;
+    height: 10em;
+  }
+
+  .main-body {
+    width: inherit !important;
+  }
+
+  .full-only {
+    display: none;
+  }
+  .cart-header {
+    padding: 5% 10%;
+    height: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .mobile-only {
+    display: unset;
+    height: auto;
+    max-width: 100%;
+  }
+
+/* 15 окт */
+  /* Стили для выпадающего меню */
+.demo-drawer {
+  width: 300px; /* Фиксированная ширина для выпадающего меню */
+  max-height: 80vh; /* Максимальная высота, чтобы меню не выходило за пределы экрана */
+  overflow-y: auto; /* Добавить вертикальную прокрутку, если элементов больше, чем помещается */
+}
+
+/* Стили для элементов меню */
+.demo-drawer .el-row {
+  white-space: nowrap; /* Запрещаем перенос текста */
+  overflow: hidden; /* Скрываем текст, который не помещается */
+  text-overflow: ellipsis; /* Добавляем многоточие, если текст не помещается */
+  padding: 10px 15px; /* Добавляем отступы внутри каждого элемента */
+  max-width: 100%; /* Убедитесь, что текст не выходит за границы */
+}
+
+/* Эффект наведения на элементы меню */
+.demo-drawer .el-row:hover {
+  background-color: #f0f0f0;
+}
+
+}

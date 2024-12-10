@@ -1,0 +1,23 @@
+[
+    {
+      "id": 1,
+      "title": "Мой профиль",
+      "url": "/account/profile"
+    },
+    {
+      "id": 2,
+      "title": "Избранное",
+      "url": "/account/wishlist"
+    },
+    {
+      "id": 3,
+      "title": "Мое обучение",
+      "url": "/account/learning"
+    },
+    {
+      "id": 4,
+      "title": "История покупок",
+      "url": "/account/purchase-history"
+    }
+  ]
+  

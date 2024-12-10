@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "title": "Мой профиль",
+    "url": "/teacher/profile"
+  },
+  {
+    "id": 2,
+    "title": "Добавить курс",
+    "url": "/teacher/add-course"
+  },
+  {
+    "id": 3,
+    "title": "Мои курсы",
+    "url": "/teacher/courses"
+  },
+  {
+    "id": 4,
+    "title": "История покупок",
+    "url": "/teacher/purchase-history"
+  }
+]

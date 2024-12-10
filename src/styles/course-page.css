@@ -1,0 +1,106 @@
+@charset "UTF-8"; /* Установка кодировки файла */
+.mainStart {
+  margin: 0 2% 2% 5%; /* Отступы */
+  padding: 2em; /* Внутренний отступ */
+}
+
+.course-info {
+  margin: 0 2% 2% 7%; /* Отступы */
+  width: 50%; /* Ширина элемента */
+  padding: 1em; /* Внутренний отступ */
+  border: 1px solid var(--el-border-color-darker); /* Граница */
+}
+
+.darkBox {
+  background: var(--vt-c-black) center fixed; /* Фон и позиционирование */
+  width: 100%; /* Ширина */
+  color: white; /* Цвет текста */
+  height: 20%; /* Высота */
+}
+
+.course-subtitle {
+  font-size: 18px; /* Размер шрифта */
+  width: 60%; /* Ширина */
+  display: flex; /* Гибкое отображение */
+  flex-wrap: wrap; /* Перенос строк */
+  word-break: normal; /* Разрыв слов */
+}
+
+.course-title {
+  width: 60%; /* Ширина */
+  display: flex; /* Гибкое отображение */
+  flex-wrap: wrap; /* Перенос строк */
+}
+
+.el-breadcrumb__inner.is-link {
+  color: var(--primary); /* Цвет ссылок */
+}
+
+.obj-item {
+  margin-bottom: 2%; /* Нижний отступ */
+}
+
+.errorBox {
+  margin: 2% auto; /* Автоматические отступы */
+  text-align: center; /* Выравнивание текста по центру */
+  align-self: center; /* Самовыравнивание по центру */
+  width: 100%; /* Ширина */
+  font-weight: bold; /* Жирный шрифт */
+}
+
+ul.lessonlist {
+  list-style-type: none; /* Удаление маркеров списка */
+  margin: 0 1em; /* Отступы */
+  padding: 0; /* Внутренние отступы */
+}
+
+.myrating .el-rate__text {
+  color: white; /* Цвет текста рейтинга */
+}
+
+.course-img {
+  display: none; /* Скрытие изображения курса */
+}
+
+.pager {
+  margin-top: 1em; /* Верхний отступ */
+}
+
+.biggy {
+  font-size: 24px; /* Размер шрифта */
+  font-weight: 700; /* Жирный шрифт */
+  color: goldenrod; /* Цвет */
+}
+
+@media screen and (max-width: 770px) { /* Медиа-запрос для мобильных устройств */
+  course-details {
+    display: none; /* Скрытие деталей курса */
+  }
+
+  .course-img {
+    display: unset; /* Показ изображения курса */
+    aspect-ratio: 16/9; /* Соотношение сторон */
+    height: auto; /* Автоматическая высота */
+    width: 100%; /* Ширина */
+    transform: scale(1.1); /* Увеличение масштаба */
+    margin-top: 2em; /* Верхний отступ */
+  }
+
+  .course-info {
+    margin-left: 1%; /* Левый отступ */
+    width: unset; /* Удаление фиксированной ширины */
+  }
+
+  .mainStart {
+    margin: unset; /* Удаление отступов */
+  }
+
+  .course-title,
+  .course-subtitle {
+    width: unset; /* Удаление фиксированной ширины */
+  }
+  
+  .obj-item {
+  margin-bottom: 4%; /* Нижний отступ */
+  }
+  }

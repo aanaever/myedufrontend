@@ -1,0 +1,30 @@
+
+
+
+
+/* semantic color variables for this project rgb(246, 253, 255); rgb(253, 246, 241);*/
+:root {
+  --primary: rgb(246, 253, 255);
+  --secondary: #3b2b83;
+  --el-rate-text-color: var(--vt-c-black);
+  --color-background: var(--vt-c-white);
+  --color-background-soft: var(--vt-c-white-soft);
+  --color-background-mute: var(--vt-c-white-mute);
+
+  --color-border: var(--vt-c-divider-light-2);
+  --color-border-hover: var(--vt-c-divider-light-1);
+  --color-heading: var(--vt-c-text-light-1);
+  --color-text: var(--vt-c-text-light-1);
+  /*--section-gap: 160px;*/
+}
+* {
+  font-family: "Fira Sans", "Droid Sans", "Helvetica Neue", system-ui, sans-serif;
+}
+body {
+  color: var(--vt-c-black);
+  background: var(--color-background);
+  transition: color 0.5s, background-color 0.5s;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
